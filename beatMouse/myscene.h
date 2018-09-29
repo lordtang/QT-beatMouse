@@ -3,6 +3,7 @@
 
 #include <QObject>
 #include <QGraphicsScene>
+#include <myitem.h>
 
 class myScene : public QGraphicsScene
 {
@@ -13,6 +14,9 @@ public:
 signals:
 
 public slots:
+
+private:
+    myItem *item;
 };
 
 #endif // MYSCENE_H
