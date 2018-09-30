@@ -1,5 +1,6 @@
 #include "myscene.h"
 #include <stdlib.h>
+
 myScene::myScene(QObject *parent) : QGraphicsScene(parent)
 {
     int i = 0;
@@ -57,5 +58,6 @@ void myScene::stopGame()
         this->item[i]->setPic(":/bg/5.png");
         this->item[i]->setMouse(false);
         this->item[i]->setStart(false);
+
     }
 }

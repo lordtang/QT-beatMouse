@@ -2,6 +2,7 @@
 #include "ui_mainwindow.h"
 #include <QMessageBox>
 #include <handler.h>
+#include <myscene.h>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),

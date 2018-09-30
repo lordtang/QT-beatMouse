@@ -19,6 +19,7 @@ public:
     void closeEvent(QCloseEvent *event);
 
 private slots:
+
     void updateScore();
 
 

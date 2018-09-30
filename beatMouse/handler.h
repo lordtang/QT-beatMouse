@@ -11,7 +11,6 @@ class handler : public QObject
 
 private:
     static handler *hand;
-private:
     explicit handler(QObject *parent = nullptr);
 public:
     void addscore();   //被调用时向外发射beatMouse()信号

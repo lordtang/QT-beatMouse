@@ -63,6 +63,8 @@ public:
         verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
         lcdNumber = new QLCDNumber(centralWidget);
         lcdNumber->setObjectName(QStringLiteral("lcdNumber"));
+        lcdNumber->setStyleSheet(QString::fromUtf8("font: 75 12pt \"\345\276\256\350\275\257\351\233\205\351\273\221\";"));
+        lcdNumber->setDigitCount(6);
 
         verticalLayout->addWidget(lcdNumber);
 
@@ -118,7 +120,7 @@ public:
         MainWindow->setWindowTitle(QApplication::translate("MainWindow", "\346\211\223\345\234\260\351\274\240", nullptr));
         btn_start->setText(QApplication::translate("MainWindow", "\345\274\200\345\247\213", nullptr));
         btn_pause->setText(QApplication::translate("MainWindow", "\346\232\202\345\201\234", nullptr));
-        btn_close->setText(QApplication::translate("MainWindow", "\351\200\200\345\207\272", nullptr));
+        btn_close->setText(QApplication::translate("MainWindow", "\345\201\234\346\255\242", nullptr));
     } // retranslateUi
 
 };
