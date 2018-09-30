@@ -19,12 +19,13 @@ public:
     void closeEvent(QCloseEvent *event);
 
 private slots:
-
+    void updateScore();
 
 
 private:
     Ui::MainWindow *ui;
     myScene *sc;
+    int score;
 };
 
 #endif // MAINWINDOW_H

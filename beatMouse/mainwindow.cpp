@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include <QMessageBox>
+#include <handler.h>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -12,6 +13,9 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(this->ui->btn_start,SIGNAL(clicked(bool)),this->sc,SLOT(startGame()));
     connect(this->ui->btn_pause,SIGNAL(clicked(bool)),this->sc,SLOT(pauseGame()));
     connect(this->ui->btn_close,SIGNAL(clicked(bool)),this->sc,SLOT(stopGame()));
+    this->score = 0;
+    handler * hand = handler::getInstance();
+    connect(hand,SIGNAL(beatMouse()),this,SLOT(updateScore()));
 }
 
 MainWindow::~MainWindow()
@@ -27,4 +31,9 @@ void MainWindow::closeEvent(QCloseEvent *event)
     {
         event->ignore();
     }
+}
+void MainWindow::updateScore()
+{
+    this->score+=10;
+    this->ui->lcdNumber->display(this->score);
 }

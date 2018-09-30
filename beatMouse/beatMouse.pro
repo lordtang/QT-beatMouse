@@ -26,12 +26,14 @@ SOURCES += \
         main.cpp \
         mainwindow.cpp \
     myscene.cpp \
-    myitem.cpp
+    myitem.cpp \
+    handler.cpp
 
 HEADERS += \
         mainwindow.h \
     myscene.h \
-    myitem.h
+    myitem.h \
+    handler.h
 
 FORMS += \
         mainwindow.ui

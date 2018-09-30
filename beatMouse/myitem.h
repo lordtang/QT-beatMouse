@@ -11,6 +11,7 @@ public:
     myItem();
     void setPic(QString path);
     void mousePressEvent(QGraphicsSceneMouseEvent *event);
+    void mouseReleaseEvent(QGraphicsSceneMouseEvent *event);
     void setMouse(bool mouse);
     bool isMouse();
     void setStart(bool start);
