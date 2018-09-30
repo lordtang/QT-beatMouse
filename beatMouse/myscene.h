@@ -4,6 +4,7 @@
 #include <QObject>
 #include <QGraphicsScene>
 #include <myitem.h>
+#include <QTimer>
 
 class myScene : public QGraphicsScene
 {
@@ -14,9 +15,14 @@ public:
 signals:
 
 public slots:
+    void showMouse();
+    void startGame();
+    void pauseGame();
+    void stopGame();
 
 private:
-    myItem *item;
+    myItem *item[16];
+    QTimer *ptimer;
 };
 
 #endif // MYSCENE_H

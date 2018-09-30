@@ -1,6 +1,8 @@
 <RCC>
     <qresource prefix="/bg">
-        <file>1.png</file>
-        <file>2.png</file>
+        <file>3.png</file>
+        <file>4.jpg</file>
+        <file>5.png</file>
+        <file>6.png</file>
     </qresource>
 </RCC>

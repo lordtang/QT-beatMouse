@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include <myscene.h>
+#include <QCloseEvent>
 
 namespace Ui {
 class MainWindow;
@@ -15,10 +16,11 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+    void closeEvent(QCloseEvent *event);
 
 private slots:
 
-    void on_btn_close_clicked();
+
 
 private:
     Ui::MainWindow *ui;
